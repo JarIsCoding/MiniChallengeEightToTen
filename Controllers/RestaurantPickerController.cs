@@ -15,7 +15,7 @@ namespace MiniChallengeEightToTen.Controllers
         }
 
         [HttpGet]
-        [Route("AsianAmericanMexican/{category}")]
+        [Route("Asian-American-Mexican/{category}")]
         public string RestaurantPicker(string category){
             return _restaurantPickerService.RestaurantPicker(category);
         }

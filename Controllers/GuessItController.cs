@@ -16,21 +16,21 @@ namespace MiniChallengeEightToTen.Controllers
         }
 
         [HttpGet]
-        [Route("Easy/EnterNumber1-10/{number}")]
+        [Route("Easy1-10/{number}")]
         public string GuessItEasy(string number)
         {
             return _guessItService.GuessItEasy(number);
         }
 
         [HttpGet]
-        [Route("Medium/EnterANumber1-50/{number}")]
+        [Route("Medium1-50/{number}")]
         public string GuessItMedium(string number)
         {
             return _guessItService.GuessItMedium(number);
         }
 
         [HttpGet]
-        [Route("Hard/EnterANumber1-100/{number}")]
+        [Route("Hard1-100/{number}")]
         public string GuessItHard(string number)
         {
             return _guessItService.GuessItHard(number);
